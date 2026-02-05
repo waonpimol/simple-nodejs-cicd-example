@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/* --exit",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "echo 'No build needed for this project'"
+  "test": "mocha ./test/* --reporter mocha-junit-reporter --reporter-options mochaFile=test-results/junit.xml --exit",
+  "start": "node index.js",
+  "build": "echo 'No build needed'"
   },
   "keywords": [],
   "author": "",
